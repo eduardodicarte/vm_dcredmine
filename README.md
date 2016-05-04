@@ -37,6 +37,7 @@ VM com CentOS7 com provisionamento do servidor de gerenciamento de projetos Redm
         > Será feito o download da imagem do sistema operacional uma única vez, quando o Vagrant perceber que a imagem já existe no Sistema Operacional, ele fará apenas a importação. Normalmente quando o sistema operacional for Windows, a imagem ficará armazenada em C:\Users\<Usuario>\.vagrant.d\boxes (O vagrant irá descompactar e configurar e alterar o formato da imagem, caso seja necessário o download da imagem, faça o backup de toda a pasta no diretório C:\Users\<Usuario>\.vagrant.d\boxes)
         
   Qualquer dúvidas adicionais entre em contato:     
+         
     emails:    
         eduardo_dicarte@yahoo.com.br   
         eduardo.dicarte@gmail.com                
