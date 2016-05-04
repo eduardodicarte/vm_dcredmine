@@ -1,0 +1,27 @@
+{
+  "author": "Eduardo Dicarte",
+  "dependencies": [{"name":"puppetlabs-stdlib",                 "version_requirement":"= 4.11.0"},
+    {"name":"maestrodev-wget",             "version_requirement":"= 1.7.3" }],
+  "license": "MIT",
+  "name": "eduardodicarte-redmine",
+  "operatingsystem_support": [ {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [ "7.0" ]
+    }],
+  "project_page": "",
+  "requirements": [ {
+      "name": "puppet",
+      "version_requirement": "4.2.1"
+    },
+    {
+      "name": "vagrant",
+      "version_requirement": "1.7.4"
+    },{
+      "name": "virtualbox",
+      "version_requirement": "5.0.10"
+    }],
+  "source": "",
+  "summary": "Módulo para a Instalação e Configuração do servidor de gerenciamento de projetos Redmine ",
+  "tags": [],
+  "version": "1.0.0"
+}
