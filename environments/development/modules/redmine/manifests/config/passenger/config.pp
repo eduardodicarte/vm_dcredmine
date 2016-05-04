@@ -8,10 +8,4 @@ class redmine::config::passenger::config{
     notify => Service["httpd"],
     require => Exec['passenger_module']
   }
-
-  exec{'iptables_clear':
-    command => "iptables -F",
-    path => "/usr/sbin", 
-    require => File["/etc/httpd/conf.d/passenger.conf"]
-  }
 }
