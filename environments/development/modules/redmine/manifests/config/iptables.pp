@@ -1,7 +1,8 @@
 class redmine::config::iptables{
    exec{'iptables_clear':
     command => "iptables -F",
-    path => "/usr/sbin", 
+    path => ["/usr/sbin","/usr/bin"],
+    unless => "cat /etc/httpd/conf.d/passenger.conf", 
     require => File["/etc/httpd/conf.d/passenger.conf"]
   }
   
