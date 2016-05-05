@@ -6,4 +6,3 @@
 	   unless => "cd /var/www/html/redmine"
 	  }
  }
- 

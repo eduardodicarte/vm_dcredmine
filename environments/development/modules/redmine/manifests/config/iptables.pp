@@ -3,7 +3,7 @@ class redmine::config::iptables{
     command => "iptables -F",
     path => ["/usr/sbin","/usr/bin"],
     unless => "cat /etc/httpd/conf.d/passenger.conf", 
-    require => File["/etc/httpd/conf.d/passenger.conf"]
+    before => File["/etc/httpd/conf.d/passenger.conf"]
   }
   
   file {'/etc/rc.d/rc.local':
