@@ -9,6 +9,7 @@ class redmine::config::passenger::install{
     command => "passenger-install-apache2-module --auto",
     path => ["/usr/local/bin","/usr/bin"],
     timeout => 0,
+    unless => "cat /etc/httpd/conf.d/passenger.conf",
     require => Package["passenger"]
   }
 }

@@ -3,6 +3,7 @@ class redmine::dependencies::databases::mysql::config{
     command => "mysql < mysql_config.sql",
     path => "/usr/bin/",
     cwd => "/tmp/",
+    onlyif => 'mysql < use redminedb',
     require => [Service["mariadb"],File["/tmp/mysql_config.sql"]]
   }
   
