@@ -9,5 +9,5 @@ class redmine::config{
   
   include redmine::config::rake
   include redmine::config::passenger
-  include redmine::config::iptables
+  include redmine::config::firewall
 }
