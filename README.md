@@ -1,4 +1,4 @@
-# vm_puppet_redmine
+# vm_dcredmine
 VM com CentOS7 com provisionamento do servidor de gerenciamento de projetos Redmine
 
     Projeto Puppet Standalone (Puppet Apply) com o módulo do Redmine para provisionamento do servidor, instalação e configuração do Redmine. Deve ser considerado os seguintes requisitos:
